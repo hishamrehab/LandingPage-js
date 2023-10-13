@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: sans-serif;
+}
+
+.header {
+    background-color: blueviolet;
+    height: 350px;
+}
+
+ .container {
+    width:90%;
+    margin: auto;
+}
+
+.header .header-parent {
+    display: flex;
+  flex-direction: row ;
+}
+
+.header-parent .heading {
+ margin-top:100px;
+ color: aliceblue;
+ font-size: 16px;
+flex-grow: 5;
+}
+
+.header-parent .heading span {
+    font-size: 30px;
+}
+
+.header-parent .loream {
+    position: relative;
+ color: aliceblue;
+margin-top: 100px ;
+font-size: 15px;
+font-family: sans-serif;
+line-height: 1.7;
+margin-left: 70px;
+flex-basis: 55%;
+}
+
+.header-parent  .loream::before {
+    position: absolute;
+    content:"";
+    height:180px;
+    width: 1px;
+    color: #fff;
+    left:-50px;
+    bottom: -20px;
+    background-color: #fff;
+}
+
+.loream  button {
+    font-size: 15px;
+    padding:15px;
+    border: 1px solid rgb(36, 114, 88);
+    border-radius: 50px;
+    color: #fff;
+    background-color: rgb(36, 114, 88);
+    width: 200px;
+   cursor: pointer;
+   text-transform: uppercase;
+   outline: 0;
+   cursor: pointer;
+}
+
+.Mamgna {
+    width: 100%;
+    height: a;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.Mamgna .Mamgna-items {
+    display: flex;
+ margin-top: 30px;
+ margin-top: 70px;
+}
+
+.Mamgna .Mamgna-items .learn {
+    margin-right: 50px;
+    flex-basis:330px;
+    flex-grow: 2;
+    padding-left: 20px;
+}
+
+.Mamgna .Mamgna-items .learn h2 {
+    font-size: 30px;
+    opacity: .6;
+}
+
+.Mamgna .Mamgna-items .learn p {
+    line-height: 2;
+    color: #8d8a8a;
+}
+
+.Mamgna .Mamgna-items .learn :last-child {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    color: #222020;
+    font-size: 13px;
+    width: 200px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.Mamgna .Mamgna-items .Json {
+    flex-grow: 4;
+    line-height: 1.4;
+    margin-left: 30px;
+    position: relative;
+    visibility: hidden;
+}
+
+.Mamgna .Mamgna-items .Json p {
+    opacity: .7;
+}
+
+.Mamgna .Mamgna-items .Json p i {
+    padding: 8px;
+    color: rgb(31, 154, 31);
+    font-size: 18px;
+} 
+
+.Mamgna .Mamgna-items .Json::before {
+    content: "";
+    height: 300px;
+    width: 2px;
+    background-color: #ddd;
+    position: absolute;
+   left: -30px;
+}
+
+.section_details {
+height: auto;
+background-color: #d4cfcf;
+}
+
+.section_details .container .section_details_items {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    border-bottom:1px solid #e5d8d8 ; 
+    }
+.section_details .container .section_details_items .div1 img {
+    width: 300px;
+    height: 300px;
+}
+
+.section_details .container .section_details_items .div2 p {
+    line-height: 2;
+    opacity: .9;
+}
+.section_details .container .section_details_items .div2 button {
+    font-size: 15px;
+    padding:15px;
+    border: 1px solid ;
+    border-radius: 50px;
+    color: #fff;
+    background-color:#8d8a8a;
+    width: 200px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: 0;
+    cursor: pointer;
+}
+.section_details .container .section_details_items .div2 button:hover {
+    background-color:blueviolet;
+}
+
+/* form */
+.section-form {
+    overflow: hidden;
+    height:auto;
+    overflow: hidden;
+    background-color: #f1eaea;
+    padding-top: 50px;
+    padding-bottom:30px ;
+}
+
+.inputs {
+    width: 50%;
+    float: left;
+    border-right: 2px solid #ddd;
+}
+
+.inputs h2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.inputs p {
+    line-height: 2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #888;
+}
+
+.inputs form input[type=text] , [type=email]{
+    color: red;
+    width: 200px;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.inputs form textarea {
+    width: 435px;
+    outline: 0;
+    padding:10px ;
+}
+
+.inputs form input[type=submit] {
+    padding: 10px;
+    width: 150px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #d4cfcf;
+    text-transform: uppercase;
+    outline: 0;
+}
+
+.section_form_items .links {
+    float: left;
+    padding-top: 50px;
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+.section_form_items .links p {
+    line-height: 2.5;
+}
+
+.section_form_items .links p i {
+    padding-right: 15px;
+    color:rgb(31, 154, 31) ;
+}
+
+/* footer */
+footer {
+    height: 150px;
+    background-color: #fff;
+    border-top:1px solid #ddd ;
+}
+
+footer p {
+    text-align: center;
+    line-height: 150px;
+padding: 20px;
+color: #777;
+}
+
+footer  p > span {
+    font-size:25px;
+    color: #222020;
+}
